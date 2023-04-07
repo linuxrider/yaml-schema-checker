@@ -16094,6 +16094,7 @@ async function run() {
         const files = FileUtils.loadFiles(yamlFiles);
 
         core.info(`Found ${files.size} file(s). Checking them:`);
+        core.debug(`Processing json: ${schemaContentAsJson}`);
 
         let validFiles = [];
         let invalidFiles = [];
